@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "wood_enjoyer:lunar_door",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ],
+          "name": "wood_enjoyer:lunar_door"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "wood_enjoyer:blocks/lunar_door"
+}

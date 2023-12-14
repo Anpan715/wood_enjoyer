@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_pressure_plate",
+  "key": {
+    "#": {
+      "item": "wood_enjoyer:lunar_planks"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "wood_enjoyer:lunar_pressure_plate"
+  },
+  "show_notification": true
+}

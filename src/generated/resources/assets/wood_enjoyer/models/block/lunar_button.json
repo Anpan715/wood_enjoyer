@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "wood_enjoyer:block/lunar_planks"
+  }
+}

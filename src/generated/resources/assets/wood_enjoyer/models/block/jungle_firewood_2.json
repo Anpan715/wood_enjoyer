@@ -1,0 +1,8 @@
+{
+  "parent": "wood_enjoyer:block/firewood_2",
+  "textures": {
+    "inner": "wood_enjoyer:block/jungle_log_inner",
+    "outer": "minecraft:block/jungle_log",
+    "top": "minecraft:block/jungle_log_top"
+  }
+}

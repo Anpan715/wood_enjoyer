@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "wood_enjoyer:block/lunar_slab"
+    },
+    "type=double": {
+      "model": "wood_enjoyer:block/lunar_planks"
+    },
+    "type=top": {
+      "model": "wood_enjoyer:block/lunar_slab_top"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#wood_enjoyer:can_generate_sparse_walnut_tree",
+  "features": "wood_enjoyer:sparse_walnut",
+  "step": "fluid_springs"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I#",
+    "I#I",
+    "#I "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:diamond"
+    },
+    "I": {
+      "tag": "wood_enjoyer:lunar_logs"
+    }
+  },
+  "result": {
+    "item": "wood_enjoyer:lunar_handle"
+  }
+}

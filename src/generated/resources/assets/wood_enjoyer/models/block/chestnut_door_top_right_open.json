@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_right_open",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "wood_enjoyer:block/chestnut_door_bottom",
+    "top": "wood_enjoyer:block/chestnut_door_top"
+  }
+}

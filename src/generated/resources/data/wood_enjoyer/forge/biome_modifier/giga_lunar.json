@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#wood_enjoyer:can_generate_lunar_tree",
+  "features": "wood_enjoyer:giga_lunar",
+  "step": "fluid_springs"
+}

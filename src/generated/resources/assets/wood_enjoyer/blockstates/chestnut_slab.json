@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "wood_enjoyer:block/chestnut_slab"
+    },
+    "type=double": {
+      "model": "wood_enjoyer:block/chestnut_planks"
+    },
+    "type=top": {
+      "model": "wood_enjoyer:block/chestnut_slab_top"
+    }
+  }
+}

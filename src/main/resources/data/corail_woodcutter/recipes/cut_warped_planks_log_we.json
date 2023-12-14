@@ -1,0 +1,18 @@
+{
+  "type": "corail_woodcutter:woodcutting",
+  "ingredient": {
+    "tag": "minecraft:warped_stems"
+  },
+  "result": "wood_enjoyer:cut_warped_planks",
+  "count": 4,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "corail_woodcutter"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "wood_enjoyer"
+    }
+  ]
+}

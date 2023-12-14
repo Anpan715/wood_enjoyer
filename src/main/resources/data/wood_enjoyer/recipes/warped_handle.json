@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I#",
+    "I#I",
+    "#I "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "I": {
+      "tag": "minecraft:warped_stems"
+    }
+  },
+  "result": {
+    "item": "wood_enjoyer:warped_handle"
+  }
+}

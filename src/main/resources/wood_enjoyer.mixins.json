@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "github.poscard8.wood_enjoyer.common.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "refmap": "mixins.wood_enjoyer.refmap.json",
+  "mixins": [
+    "AbstractFurnaceBlockEntityMixin",
+    "AnvilMenuMixin",
+    "AxeItemMixin",
+    "EnchantmentHelperMixin",
+    "FireBlockInvoker",
+    "ItemCombinerMenuInvoker",
+    "ItemStackMixin",
+    "OverworldBiomeBuilderMixin"
+  ]
+}

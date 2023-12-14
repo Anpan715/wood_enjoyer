@@ -1,0 +1,66 @@
+{
+  "block.lunar_wood.break": {
+    "subtitle": "subtitles.block.generic.break",
+    "sounds": [
+      "wood_enjoyer:lunar_wood_break1",
+      "wood_enjoyer:lunar_wood_break2",
+      "wood_enjoyer:lunar_wood_break3",
+      "wood_enjoyer:lunar_wood_break4"
+    ]
+  },
+  "block.lunar_wood.fall": {
+    "subtitle": "subtitles.entity.generic.big_fall",
+    "sounds": [
+      "wood_enjoyer:lunar_wood_step1",
+      "wood_enjoyer:lunar_wood_step2",
+      "wood_enjoyer:lunar_wood_step3",
+      "wood_enjoyer:lunar_wood_step4",
+      "wood_enjoyer:lunar_wood_step5"
+    ]
+  },
+  "block.lunar_wood.hit": {
+    "subtitle": "subtitles.block.generic.hit",
+    "sounds": [
+      "wood_enjoyer:lunar_wood_step1",
+      "wood_enjoyer:lunar_wood_step2",
+      "wood_enjoyer:lunar_wood_step3",
+      "wood_enjoyer:lunar_wood_step4",
+      "wood_enjoyer:lunar_wood_step5"
+    ]
+  },
+  "block.lunar_wood.place": {
+    "subtitle": "subtitles.block.generic.place",
+    "sounds": [
+      "wood_enjoyer:lunar_wood_break1",
+      "wood_enjoyer:lunar_wood_break2",
+      "wood_enjoyer:lunar_wood_break3",
+      "wood_enjoyer:lunar_wood_break4"
+    ]
+  },
+  "block.lunar_wood.step": {
+    "subtitle": "subtitles.block.generic.footsteps",
+    "sounds": [
+      "wood_enjoyer:lunar_wood_step1",
+      "wood_enjoyer:lunar_wood_step2",
+      "wood_enjoyer:lunar_wood_step3",
+      "wood_enjoyer:lunar_wood_step4",
+      "wood_enjoyer:lunar_wood_step5"
+    ]
+  },
+  "misc.wood_carve": {
+    "subtitle": "subtitles.wood_enjoyer.wood_carve",
+    "sounds": [
+      "wood_enjoyer:wood_carve1",
+      "wood_enjoyer:wood_carve2",
+      "wood_enjoyer:wood_carve3"
+    ]
+  },
+  "misc.wood_chop": {
+    "subtitle": "subtitles.wood_enjoyer.wood_chop",
+    "sounds": [
+      "wood_enjoyer:wood_chop1",
+      "wood_enjoyer:wood_chop2",
+      "wood_enjoyer:wood_chop3"
+    ]
+  }
+}

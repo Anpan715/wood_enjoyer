@@ -1,0 +1,8 @@
+{
+  "parent": "wood_enjoyer:block/firewood_3",
+  "textures": {
+    "inner": "wood_enjoyer:block/spruce_log_inner",
+    "outer": "minecraft:block/spruce_log",
+    "top": "minecraft:block/spruce_log_top"
+  }
+}

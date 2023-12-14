@@ -1,0 +1,6 @@
+{
+  "parent": "wood_enjoyer:item/generated_small",
+  "textures": {
+    "layer0": "wood_enjoyer:item/chestnut"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "corail_woodcutter:woodcutting",
+  "ingredient": {
+    "tag": "minecraft:birch_logs"
+  },
+  "result": "wood_enjoyer:cut_birch_planks",
+  "count": 4,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "corail_woodcutter"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "wood_enjoyer"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "wood_enjoyer:block/chestnut_planks"
+  }
+}

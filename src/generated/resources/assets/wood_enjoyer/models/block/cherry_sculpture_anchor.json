@@ -1,0 +1,6 @@
+{
+  "parent": "wood_enjoyer:block/anchor_sculpture",
+  "textures": {
+    "all": "wood_enjoyer:block/cut_cherry_planks"
+  }
+}

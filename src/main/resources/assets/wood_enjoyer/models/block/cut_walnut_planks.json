@@ -1,0 +1,6 @@
+{
+  "parent": "wood_enjoyer:block/walnut_planks",
+  "textures": {
+    "all": "wood_enjoyer:block/cut_walnut_planks"
+  }
+}

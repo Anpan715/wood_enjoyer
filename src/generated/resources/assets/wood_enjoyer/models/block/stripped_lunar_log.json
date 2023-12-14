@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "wood_enjoyer:block/stripped_lunar_log_top",
+    "side": "wood_enjoyer:block/stripped_lunar_log_side"
+  }
+}

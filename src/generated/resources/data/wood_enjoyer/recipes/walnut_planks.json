@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "wood_enjoyer:walnut_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "wood_enjoyer:walnut_planks"
+  }
+}

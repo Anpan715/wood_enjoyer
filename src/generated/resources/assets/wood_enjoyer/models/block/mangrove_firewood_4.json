@@ -1,0 +1,8 @@
+{
+  "parent": "wood_enjoyer:block/firewood_4",
+  "textures": {
+    "inner": "wood_enjoyer:block/mangrove_log_inner",
+    "outer": "minecraft:block/mangrove_log",
+    "top": "minecraft:block/mangrove_log_top"
+  }
+}

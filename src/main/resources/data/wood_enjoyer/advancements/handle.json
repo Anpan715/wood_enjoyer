@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "wood_enjoyer:warped_handle"
+    },
+    "title": "What Does This Do?",
+    "description": "Craft a handle",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "wood_enjoyer:wood_enjoyer",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "wood_enjoyer:lunar_handle",
+              "wood_enjoyer:warped_handle"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

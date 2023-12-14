@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "wood_enjoyer:walnut_planks"
+    },
+    "title": "Wood Enjoyer",
+    "description": "The beginning...",
+    "background": "wood_enjoyer:textures/block/cut_chestnut_planks.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

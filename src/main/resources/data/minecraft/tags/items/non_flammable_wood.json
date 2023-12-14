@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#wood_enjoyer:lunar_blocks",
+    "wood_enjoyer:cut_crimson_planks",
+    "wood_enjoyer:crimson_firewood",
+    "wood_enjoyer:cut_warped_planks",
+    "wood_enjoyer:warped_firewood"
+  ]
+}

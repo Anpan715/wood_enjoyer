@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "axis=x,count=1": {
+      "model": "wood_enjoyer:block/crimson_firewood_horizontal_1",
+      "x": 90,
+      "y": 90
+    },
+    "axis=x,count=2": {
+      "model": "wood_enjoyer:block/crimson_firewood_horizontal_2",
+      "x": 90,
+      "y": 90
+    },
+    "axis=x,count=3": {
+      "model": "wood_enjoyer:block/crimson_firewood_3",
+      "x": 90,
+      "y": 90
+    },
+    "axis=x,count=4": {
+      "model": "wood_enjoyer:block/crimson_firewood_4",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y,count=1": {
+      "model": "wood_enjoyer:block/crimson_firewood_1"
+    },
+    "axis=y,count=2": {
+      "model": "wood_enjoyer:block/crimson_firewood_2"
+    },
+    "axis=y,count=3": {
+      "model": "wood_enjoyer:block/crimson_firewood_3"
+    },
+    "axis=y,count=4": {
+      "model": "wood_enjoyer:block/crimson_firewood_4"
+    },
+    "axis=z,count=1": {
+      "model": "wood_enjoyer:block/crimson_firewood_horizontal_1",
+      "x": 90
+    },
+    "axis=z,count=2": {
+      "model": "wood_enjoyer:block/crimson_firewood_horizontal_2",
+      "x": 90
+    },
+    "axis=z,count=3": {
+      "model": "wood_enjoyer:block/crimson_firewood_3",
+      "x": 90
+    },
+    "axis=z,count=4": {
+      "model": "wood_enjoyer:block/crimson_firewood_4",
+      "x": 90
+    }
+  }
+}

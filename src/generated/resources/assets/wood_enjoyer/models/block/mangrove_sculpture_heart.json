@@ -1,0 +1,6 @@
+{
+  "parent": "wood_enjoyer:block/heart_sculpture",
+  "textures": {
+    "all": "wood_enjoyer:block/cut_mangrove_planks"
+  }
+}

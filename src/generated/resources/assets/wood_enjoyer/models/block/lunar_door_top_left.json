@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "wood_enjoyer:block/lunar_door_bottom",
+    "top": "wood_enjoyer:block/lunar_door_top"
+  }
+}

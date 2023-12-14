@@ -1,0 +1,364 @@
+{
+  "variants": {
+    "facing=east,model=anchor": {
+      "model": "wood_enjoyer:block/spruce_sculpture_anchor",
+      "y": 90
+    },
+    "facing=east,model=angel": {
+      "model": "wood_enjoyer:block/spruce_sculpture_angel",
+      "y": 90
+    },
+    "facing=east,model=axe": {
+      "model": "wood_enjoyer:block/spruce_sculpture_axe",
+      "y": 90
+    },
+    "facing=east,model=bishop": {
+      "model": "wood_enjoyer:block/spruce_sculpture_bishop",
+      "y": 90
+    },
+    "facing=east,model=blaze": {
+      "model": "wood_enjoyer:block/spruce_sculpture_blaze",
+      "y": 90
+    },
+    "facing=east,model=book": {
+      "model": "wood_enjoyer:block/spruce_sculpture_book",
+      "y": 90
+    },
+    "facing=east,model=creeper": {
+      "model": "wood_enjoyer:block/spruce_sculpture_creeper",
+      "y": 90
+    },
+    "facing=east,model=dice": {
+      "model": "wood_enjoyer:block/spruce_sculpture_dice",
+      "y": 90
+    },
+    "facing=east,model=enderman": {
+      "model": "wood_enjoyer:block/spruce_sculpture_enderman",
+      "y": 90
+    },
+    "facing=east,model=gem": {
+      "model": "wood_enjoyer:block/spruce_sculpture_gem",
+      "y": 90
+    },
+    "facing=east,model=hammer": {
+      "model": "wood_enjoyer:block/spruce_sculpture_hammer",
+      "y": 90
+    },
+    "facing=east,model=heart": {
+      "model": "wood_enjoyer:block/spruce_sculpture_heart",
+      "y": 90
+    },
+    "facing=east,model=king": {
+      "model": "wood_enjoyer:block/spruce_sculpture_king",
+      "y": 90
+    },
+    "facing=east,model=knight": {
+      "model": "wood_enjoyer:block/spruce_sculpture_knight",
+      "y": 90
+    },
+    "facing=east,model=note": {
+      "model": "wood_enjoyer:block/spruce_sculpture_note",
+      "y": 90
+    },
+    "facing=east,model=pawn": {
+      "model": "wood_enjoyer:block/spruce_sculpture_pawn",
+      "y": 90
+    },
+    "facing=east,model=queen": {
+      "model": "wood_enjoyer:block/spruce_sculpture_queen",
+      "y": 90
+    },
+    "facing=east,model=rabbit": {
+      "model": "wood_enjoyer:block/spruce_sculpture_rabbit",
+      "y": 90
+    },
+    "facing=east,model=rook": {
+      "model": "wood_enjoyer:block/spruce_sculpture_rook",
+      "y": 90
+    },
+    "facing=east,model=skull": {
+      "model": "wood_enjoyer:block/spruce_sculpture_skull",
+      "y": 90
+    },
+    "facing=east,model=sword": {
+      "model": "wood_enjoyer:block/spruce_sculpture_sword",
+      "y": 90
+    },
+    "facing=east,model=vex": {
+      "model": "wood_enjoyer:block/spruce_sculpture_vex",
+      "y": 90
+    },
+    "facing=east,model=villager": {
+      "model": "wood_enjoyer:block/spruce_sculpture_villager",
+      "y": 90
+    },
+    "facing=east,model=wolf": {
+      "model": "wood_enjoyer:block/spruce_sculpture_wolf",
+      "y": 90
+    },
+    "facing=north,model=anchor": {
+      "model": "wood_enjoyer:block/spruce_sculpture_anchor"
+    },
+    "facing=north,model=angel": {
+      "model": "wood_enjoyer:block/spruce_sculpture_angel"
+    },
+    "facing=north,model=axe": {
+      "model": "wood_enjoyer:block/spruce_sculpture_axe"
+    },
+    "facing=north,model=bishop": {
+      "model": "wood_enjoyer:block/spruce_sculpture_bishop"
+    },
+    "facing=north,model=blaze": {
+      "model": "wood_enjoyer:block/spruce_sculpture_blaze"
+    },
+    "facing=north,model=book": {
+      "model": "wood_enjoyer:block/spruce_sculpture_book"
+    },
+    "facing=north,model=creeper": {
+      "model": "wood_enjoyer:block/spruce_sculpture_creeper"
+    },
+    "facing=north,model=dice": {
+      "model": "wood_enjoyer:block/spruce_sculpture_dice"
+    },
+    "facing=north,model=enderman": {
+      "model": "wood_enjoyer:block/spruce_sculpture_enderman"
+    },
+    "facing=north,model=gem": {
+      "model": "wood_enjoyer:block/spruce_sculpture_gem"
+    },
+    "facing=north,model=hammer": {
+      "model": "wood_enjoyer:block/spruce_sculpture_hammer"
+    },
+    "facing=north,model=heart": {
+      "model": "wood_enjoyer:block/spruce_sculpture_heart"
+    },
+    "facing=north,model=king": {
+      "model": "wood_enjoyer:block/spruce_sculpture_king"
+    },
+    "facing=north,model=knight": {
+      "model": "wood_enjoyer:block/spruce_sculpture_knight"
+    },
+    "facing=north,model=note": {
+      "model": "wood_enjoyer:block/spruce_sculpture_note"
+    },
+    "facing=north,model=pawn": {
+      "model": "wood_enjoyer:block/spruce_sculpture_pawn"
+    },
+    "facing=north,model=queen": {
+      "model": "wood_enjoyer:block/spruce_sculpture_queen"
+    },
+    "facing=north,model=rabbit": {
+      "model": "wood_enjoyer:block/spruce_sculpture_rabbit"
+    },
+    "facing=north,model=rook": {
+      "model": "wood_enjoyer:block/spruce_sculpture_rook"
+    },
+    "facing=north,model=skull": {
+      "model": "wood_enjoyer:block/spruce_sculpture_skull"
+    },
+    "facing=north,model=sword": {
+      "model": "wood_enjoyer:block/spruce_sculpture_sword"
+    },
+    "facing=north,model=vex": {
+      "model": "wood_enjoyer:block/spruce_sculpture_vex"
+    },
+    "facing=north,model=villager": {
+      "model": "wood_enjoyer:block/spruce_sculpture_villager"
+    },
+    "facing=north,model=wolf": {
+      "model": "wood_enjoyer:block/spruce_sculpture_wolf"
+    },
+    "facing=south,model=anchor": {
+      "model": "wood_enjoyer:block/spruce_sculpture_anchor",
+      "y": 180
+    },
+    "facing=south,model=angel": {
+      "model": "wood_enjoyer:block/spruce_sculpture_angel",
+      "y": 180
+    },
+    "facing=south,model=axe": {
+      "model": "wood_enjoyer:block/spruce_sculpture_axe",
+      "y": 180
+    },
+    "facing=south,model=bishop": {
+      "model": "wood_enjoyer:block/spruce_sculpture_bishop",
+      "y": 180
+    },
+    "facing=south,model=blaze": {
+      "model": "wood_enjoyer:block/spruce_sculpture_blaze",
+      "y": 180
+    },
+    "facing=south,model=book": {
+      "model": "wood_enjoyer:block/spruce_sculpture_book",
+      "y": 180
+    },
+    "facing=south,model=creeper": {
+      "model": "wood_enjoyer:block/spruce_sculpture_creeper",
+      "y": 180
+    },
+    "facing=south,model=dice": {
+      "model": "wood_enjoyer:block/spruce_sculpture_dice",
+      "y": 180
+    },
+    "facing=south,model=enderman": {
+      "model": "wood_enjoyer:block/spruce_sculpture_enderman",
+      "y": 180
+    },
+    "facing=south,model=gem": {
+      "model": "wood_enjoyer:block/spruce_sculpture_gem",
+      "y": 180
+    },
+    "facing=south,model=hammer": {
+      "model": "wood_enjoyer:block/spruce_sculpture_hammer",
+      "y": 180
+    },
+    "facing=south,model=heart": {
+      "model": "wood_enjoyer:block/spruce_sculpture_heart",
+      "y": 180
+    },
+    "facing=south,model=king": {
+      "model": "wood_enjoyer:block/spruce_sculpture_king",
+      "y": 180
+    },
+    "facing=south,model=knight": {
+      "model": "wood_enjoyer:block/spruce_sculpture_knight",
+      "y": 180
+    },
+    "facing=south,model=note": {
+      "model": "wood_enjoyer:block/spruce_sculpture_note",
+      "y": 180
+    },
+    "facing=south,model=pawn": {
+      "model": "wood_enjoyer:block/spruce_sculpture_pawn",
+      "y": 180
+    },
+    "facing=south,model=queen": {
+      "model": "wood_enjoyer:block/spruce_sculpture_queen",
+      "y": 180
+    },
+    "facing=south,model=rabbit": {
+      "model": "wood_enjoyer:block/spruce_sculpture_rabbit",
+      "y": 180
+    },
+    "facing=south,model=rook": {
+      "model": "wood_enjoyer:block/spruce_sculpture_rook",
+      "y": 180
+    },
+    "facing=south,model=skull": {
+      "model": "wood_enjoyer:block/spruce_sculpture_skull",
+      "y": 180
+    },
+    "facing=south,model=sword": {
+      "model": "wood_enjoyer:block/spruce_sculpture_sword",
+      "y": 180
+    },
+    "facing=south,model=vex": {
+      "model": "wood_enjoyer:block/spruce_sculpture_vex",
+      "y": 180
+    },
+    "facing=south,model=villager": {
+      "model": "wood_enjoyer:block/spruce_sculpture_villager",
+      "y": 180
+    },
+    "facing=south,model=wolf": {
+      "model": "wood_enjoyer:block/spruce_sculpture_wolf",
+      "y": 180
+    },
+    "facing=west,model=anchor": {
+      "model": "wood_enjoyer:block/spruce_sculpture_anchor",
+      "y": 270
+    },
+    "facing=west,model=angel": {
+      "model": "wood_enjoyer:block/spruce_sculpture_angel",
+      "y": 270
+    },
+    "facing=west,model=axe": {
+      "model": "wood_enjoyer:block/spruce_sculpture_axe",
+      "y": 270
+    },
+    "facing=west,model=bishop": {
+      "model": "wood_enjoyer:block/spruce_sculpture_bishop",
+      "y": 270
+    },
+    "facing=west,model=blaze": {
+      "model": "wood_enjoyer:block/spruce_sculpture_blaze",
+      "y": 270
+    },
+    "facing=west,model=book": {
+      "model": "wood_enjoyer:block/spruce_sculpture_book",
+      "y": 270
+    },
+    "facing=west,model=creeper": {
+      "model": "wood_enjoyer:block/spruce_sculpture_creeper",
+      "y": 270
+    },
+    "facing=west,model=dice": {
+      "model": "wood_enjoyer:block/spruce_sculpture_dice",
+      "y": 270
+    },
+    "facing=west,model=enderman": {
+      "model": "wood_enjoyer:block/spruce_sculpture_enderman",
+      "y": 270
+    },
+    "facing=west,model=gem": {
+      "model": "wood_enjoyer:block/spruce_sculpture_gem",
+      "y": 270
+    },
+    "facing=west,model=hammer": {
+      "model": "wood_enjoyer:block/spruce_sculpture_hammer",
+      "y": 270
+    },
+    "facing=west,model=heart": {
+      "model": "wood_enjoyer:block/spruce_sculpture_heart",
+      "y": 270
+    },
+    "facing=west,model=king": {
+      "model": "wood_enjoyer:block/spruce_sculpture_king",
+      "y": 270
+    },
+    "facing=west,model=knight": {
+      "model": "wood_enjoyer:block/spruce_sculpture_knight",
+      "y": 270
+    },
+    "facing=west,model=note": {
+      "model": "wood_enjoyer:block/spruce_sculpture_note",
+      "y": 270
+    },
+    "facing=west,model=pawn": {
+      "model": "wood_enjoyer:block/spruce_sculpture_pawn",
+      "y": 270
+    },
+    "facing=west,model=queen": {
+      "model": "wood_enjoyer:block/spruce_sculpture_queen",
+      "y": 270
+    },
+    "facing=west,model=rabbit": {
+      "model": "wood_enjoyer:block/spruce_sculpture_rabbit",
+      "y": 270
+    },
+    "facing=west,model=rook": {
+      "model": "wood_enjoyer:block/spruce_sculpture_rook",
+      "y": 270
+    },
+    "facing=west,model=skull": {
+      "model": "wood_enjoyer:block/spruce_sculpture_skull",
+      "y": 270
+    },
+    "facing=west,model=sword": {
+      "model": "wood_enjoyer:block/spruce_sculpture_sword",
+      "y": 270
+    },
+    "facing=west,model=vex": {
+      "model": "wood_enjoyer:block/spruce_sculpture_vex",
+      "y": 270
+    },
+    "facing=west,model=villager": {
+      "model": "wood_enjoyer:block/spruce_sculpture_villager",
+      "y": 270
+    },
+    "facing=west,model=wolf": {
+      "model": "wood_enjoyer:block/spruce_sculpture_wolf",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wood_enjoyer:chestnut"
+    },
+    {
+      "item": "wood_enjoyer:walnut"
+    },
+    {
+      "item": "minecraft:pumpkin_pie"
+    }
+  ],
+  "result": {
+    "item": "wood_enjoyer:sweet_pumpkin_pie"
+  }
+}

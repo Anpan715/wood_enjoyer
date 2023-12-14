@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wood_enjoyer:chestnut"
+    },
+    {
+      "item": "wood_enjoyer:chestnut"
+    },
+    {
+      "item": "wood_enjoyer:chestnut"
+    },
+    {
+      "item": "wood_enjoyer:chestnut"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "wood_enjoyer:chestnut_bowl"
+  }
+}

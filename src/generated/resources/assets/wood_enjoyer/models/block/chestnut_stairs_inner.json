@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "wood_enjoyer:block/chestnut_planks",
+    "side": "wood_enjoyer:block/chestnut_planks",
+    "top": "wood_enjoyer:block/chestnut_planks"
+  }
+}

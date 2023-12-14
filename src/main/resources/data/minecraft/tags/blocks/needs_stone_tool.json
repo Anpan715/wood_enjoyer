@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "wood_enjoyer:chestnut_log",
+    "wood_enjoyer:chestnut_wood",
+    "wood_enjoyer:stripped_chestnut_log",
+    "wood_enjoyer:stripped_chestnut_wood",
+    "wood_enjoyer:chestnut_planks",
+    "wood_enjoyer:chestnut_stairs",
+    "wood_enjoyer:chestnut_slab",
+    "wood_enjoyer:chestnut_fence",
+    "wood_enjoyer:chestnut_fence_gate",
+    "wood_enjoyer:chestnut_door",
+    "wood_enjoyer:chestnut_trapdoor",
+    "wood_enjoyer:chestnut_pressure_plate",
+    "wood_enjoyer:chestnut_button",
+    "wood_enjoyer:chestnut_sign",
+    "wood_enjoyer:chestnut_wall_sign",
+    "wood_enjoyer:chestnut_hanging_sign",
+    "wood_enjoyer:chestnut_wall_hanging_sign",
+    "wood_enjoyer:chestnut_sculpture",
+    "wood_enjoyer:chestnut_firewood",
+    "wood_enjoyer:cut_chestnut_planks"
+  ]
+}

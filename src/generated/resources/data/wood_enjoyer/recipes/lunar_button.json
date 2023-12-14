@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "wood_enjoyer:lunar_planks"
+    }
+  ],
+  "result": {
+    "item": "wood_enjoyer:lunar_button"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "wood_enjoyer:block/note_sculpture",
+  "textures": {
+    "all": "wood_enjoyer:block/cut_chestnut_planks"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "#wood_enjoyer:carveable",
+    "#wood_enjoyer:firewoods",
+    "wood_enjoyer:stump",
+    "wood_enjoyer:walnut_hanging_sign",
+    "wood_enjoyer:chestnut_hanging_sign",
+    "wood_enjoyer:lunar_hanging_sign",
+    "wood_enjoyer:walnut_wall_hanging_sign",
+    "wood_enjoyer:chestnut_wall_hanging_sign",
+    "wood_enjoyer:lunar_wall_hanging_sign"
+  ]
+}

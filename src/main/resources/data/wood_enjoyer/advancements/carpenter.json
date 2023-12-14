@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "wood_enjoyer:copper_chisel"
+    },
+    "title": "Carpenter",
+    "description": "Carve a sculpture",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "wood_enjoyer:wood_enjoyer",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "block": {
+                  "tag": "wood_enjoyer:carveable"
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "tag": "wood_enjoyer:chisels"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

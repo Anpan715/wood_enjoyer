@@ -1,0 +1,8 @@
+{
+  "parent": "wood_enjoyer:block/firewood_1",
+  "textures": {
+    "inner": "wood_enjoyer:block/walnut_log_inner",
+    "outer": "wood_enjoyer:block/walnut_log_side",
+    "top": "wood_enjoyer:block/walnut_log_top"
+  }
+}
