@@ -23,7 +23,7 @@ public class LunarShrubBlock extends SaplingBlock {
     }
 
     @Override
-    public boolean isValidBonemealTarget(LevelReader level, BlockPos position, BlockState state, boolean flag) {
+    public boolean isValidBonemealTarget(LevelReader level, BlockPos position, BlockState state) {
         return level.getBlockState(position.below()).is(Blocks.END_STONE);
     }
 

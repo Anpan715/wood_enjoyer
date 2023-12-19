@@ -3,8 +3,12 @@
     "icon": {
       "item": "wood_enjoyer:lunar_planks"
     },
-    "title": "Collector",
-    "description": "Collect every vanilla and Wood Enjoyer plank type",
+    "title": {
+      "translate": "advancement.wood_enjoyer.collector"
+    },
+    "description": {
+      "translate": "advancement_desc.wood_enjoyer.collector"
+    },
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,

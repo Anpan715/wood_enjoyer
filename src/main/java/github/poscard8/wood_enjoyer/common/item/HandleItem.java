@@ -2,6 +2,7 @@ package github.poscard8.wood_enjoyer.common.item;
 
 import github.poscard8.wood_enjoyer.common.config.WoodEnjoyerConfig;
 import net.minecraft.ChatFormatting;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
@@ -61,10 +62,12 @@ public class HandleItem extends Item {
     }
 
     public static ItemStack clear(ItemStack stack) {
+        CompoundTag tag = stack.getOrCreateTag();
         ItemStack newStack = stack.copy();
-        int damage = stack.getOrCreateTag().getInt("Handle") == 2 ? Math.round((float) (stack.getDamageValue() / WoodEnjoyerConfig.LUNAR_HANDLE_BUFF.get())) : stack.getDamageValue();
-        newStack.getOrCreateTag().remove("Handle");
+        int damage = tag.getInt("Handle") == 2 ? Math.round((float) (stack.getDamageValue() / WoodEnjoyerConfig.LUNAR_HANDLE_BUFF.get())) : stack.getDamageValue();
+        tag.remove("Handle");
         newStack.setDamageValue(damage);
+        if (tag.size() == 0) { newStack.setTag(null); }
         return newStack;
     }
 

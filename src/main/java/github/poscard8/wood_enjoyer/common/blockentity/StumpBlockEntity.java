@@ -1,6 +1,6 @@
 package github.poscard8.wood_enjoyer.common.blockentity;
 
-import github.poscard8.wood_enjoyer.common.block.StumpBlock;
+import github.poscard8.wood_enjoyer.common.util.BlockUtils;
 import github.poscard8.wood_enjoyer.init.registry.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -16,10 +16,9 @@ import java.util.Objects;
 
 public class StumpBlockEntity extends BlockEntity {
 
-    public static final List<ItemLike> LOGS = StumpBlock.LOGS;
-    public static final List<ItemLike> FIREWOODS = StumpBlock.FIREWOODS;
+    public static final List<ItemLike> LOGS = BlockUtils.LOGS;
+    public static final List<ItemLike> FIREWOODS = BlockUtils.FIREWOODS;
 
-    public boolean shouldRender;
     private int logType;
     private int logCount;
     private float rotation;

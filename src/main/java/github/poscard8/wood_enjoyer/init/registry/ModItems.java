@@ -22,21 +22,22 @@ public abstract class ModItems {
     private static final DeferredRegister<Item> PLACEHOLDER = DeferredRegister.create(ForgeRegistries.ITEMS, "");
     public static final List<ItemWrapper> ALL = new ArrayList<>();
 
-    public static final ItemWrapper COPPER_CHISEL = new ItemWrapper("copper_chisel", () -> new ChiselItem(new Item.Properties().stacksTo(1).durability(48)), ItemModelType.HANDHELD_SMALL, ModBlocks.STUMP);
-    public static final ItemWrapper NETHERITE_CHISEL = new ItemWrapper("netherite_chisel", () -> new ChiselItem(new Item.Properties().stacksTo(1).durability(1016)), ItemModelType.HANDHELD_SMALL, ModBlocks.STUMP);
-    public static final ItemWrapper WARPED_HANDLE = new ItemWrapper("warped_handle", () -> new HandleItem(HandleItem.PROPERTIES, "tooltip.wood_enjoyer.warped_handle"), ItemModelType.HANDHELD_SMALL, ModBlocks.STUMP);
-    public static final ItemWrapper LUNAR_HANDLE = new ItemWrapper("lunar_handle", () -> new HandleItem(HandleItem.PROPERTIES, "tooltip.wood_enjoyer.lunar_handle"), ItemModelType.HANDHELD_SMALL, ModBlocks.STUMP);
+    public static final ItemWrapper
+            COPPER_CHISEL = new ItemWrapper("copper_chisel", () -> new ChiselItem(new Item.Properties().stacksTo(1).durability(48)), ItemModelType.HANDHELD_SMALL, ModBlocks.STUMP),
+            NETHERITE_CHISEL = new ItemWrapper("netherite_chisel", () -> new ChiselItem(new Item.Properties().stacksTo(1).durability(1016)), ItemModelType.HANDHELD_SMALL, ModBlocks.STUMP),
+            WARPED_HANDLE = new ItemWrapper("warped_handle", () -> new HandleItem(HandleItem.PROPERTIES, "tooltip.wood_enjoyer.warped_handle"), ItemModelType.HANDHELD_SMALL, ModBlocks.STUMP),
+            LUNAR_HANDLE = new ItemWrapper("lunar_handle", () -> new HandleItem(HandleItem.PROPERTIES, "tooltip.wood_enjoyer.lunar_handle"), ItemModelType.HANDHELD_SMALL, ModBlocks.STUMP),
 
-    public static final ItemWrapper WALNUT_BOAT = boat(ModdedBoat.Type.WALNUT, false);
-    public static final ItemWrapper WALNUT_CHEST_BOAT = boat(ModdedBoat.Type.WALNUT, true);
-    public static final ItemWrapper CHESTNUT_BOAT = boat(ModdedBoat.Type.CHESTNUT, false);
-    public static final ItemWrapper CHESTNUT_CHEST_BOAT = boat(ModdedBoat.Type.CHESTNUT, true);
+            WALNUT_BOAT = boat(ModdedBoat.Type.WALNUT, false),
+            WALNUT_CHEST_BOAT = boat(ModdedBoat.Type.WALNUT, true),
+            CHESTNUT_BOAT = boat(ModdedBoat.Type.CHESTNUT, false),
+            CHESTNUT_CHEST_BOAT = boat(ModdedBoat.Type.CHESTNUT, true),
 
-    public static final ItemWrapper WALNUT = new ItemWrapper("walnut", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.6F).fast().build())), ItemModelType.GENERATED_SMALL);
-    public static final ItemWrapper CHESTNUT = new ItemWrapper("chestnut", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.8F).fast().build())), ItemModelType.GENERATED_SMALL);
-    public static final ItemWrapper WALNUT_BOWL = new ItemWrapper("walnut_bowl", () -> new BowlFoodItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(7).saturationMod(0.6F).build()).stacksTo(1)), ItemModelType.GENERATED);
-    public static final ItemWrapper CHESTNUT_BOWL = new ItemWrapper("chestnut_bowl", () -> new BowlFoodItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(9).saturationMod(0.8F).build()).stacksTo(1)), ItemModelType.GENERATED);
-    public static final ItemWrapper SWEET_PUMPKIN_PIE = new ItemWrapper("sweet_pumpkin_pie", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(11).saturationMod(0.3F).fast().build())), ItemModelType.GENERATED);
+            WALNUT = new ItemWrapper("walnut", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.6F).fast().build())), ItemModelType.GENERATED_SMALL),
+            CHESTNUT = new ItemWrapper("chestnut", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.8F).fast().build())), ItemModelType.GENERATED_SMALL),
+            WALNUT_BOWL = new ItemWrapper("walnut_bowl", () -> new BowlFoodItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(7).saturationMod(0.6F).build()).stacksTo(1)), ItemModelType.GENERATED),
+            CHESTNUT_BOWL = new ItemWrapper("chestnut_bowl", () -> new BowlFoodItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(9).saturationMod(0.8F).build()).stacksTo(1)), ItemModelType.GENERATED),
+            SWEET_PUMPKIN_PIE = new ItemWrapper("sweet_pumpkin_pie", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(11).saturationMod(0.3F).fast().build())), ItemModelType.GENERATED);
 
     protected static ItemWrapper boat(ModdedBoat.Type type, boolean hasChest) {
         String suffix = hasChest ? "_chest_boat" : "_boat";

@@ -22,7 +22,7 @@ import java.util.List;
 public abstract class ItemStackMixin {
 
     @Shadow
-    abstract CompoundTag getOrCreateTag();
+    abstract CompoundTag getTag();
 
     @Shadow
     abstract Item getItem();
@@ -30,20 +30,32 @@ public abstract class ItemStackMixin {
     private ItemStack self = (ItemStack) (Object) this;
 
     private boolean arcaneFlag() {
-        return this.getOrCreateTag().getInt("Handle") == 1;
+
+        if (this.getTag() == null) {
+            return false;
+        } else {
+            return this.getTag().getInt("Handle") == 1;
+        }
     }
 
     private boolean stableFlag() {
-        return this.getOrCreateTag().getInt("Handle") == 2;
+
+        if (this.getTag() == null) {
+            return false;
+        } else {
+            return this.getTag().getInt("Handle") == 2;
+        }
     }
 
     @Inject(method = "getTooltipLines", at = @At("TAIL"), cancellable = true)
     private void addHandleTooltip(@Nullable Player player, TooltipFlag flag, CallbackInfoReturnable<List<Component>> ci) {
         List<Component> components = ci.getReturnValue();
-        int handleValue = this.getOrCreateTag().getInt("Handle");
-        if (handleValue > 0 && handleValue < HandleItem.ALL.size() + 1) {
-            components.add(1, HandleItem.ALL.get(handleValue - 1).getTooltip());
 
+        if (this.getTag() != null) {
+            int handleValue = this.getTag().getInt("Handle");
+            if (handleValue > 0 && handleValue < HandleItem.ALL.size() + 1) {
+                components.add(1, HandleItem.ALL.get(handleValue - 1).getTooltip());
+            }
         }
         ci.setReturnValue(components);
     }

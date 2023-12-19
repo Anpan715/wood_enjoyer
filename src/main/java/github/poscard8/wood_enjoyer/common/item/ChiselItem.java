@@ -7,8 +7,8 @@ import github.poscard8.wood_enjoyer.common.util.ModTags;
 import net.minecraft.ChatFormatting;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.BlockSource;
 import net.minecraft.core.Direction;
+import net.minecraft.core.dispenser.BlockSource;
 import net.minecraft.core.dispenser.DefaultDispenseItemBehavior;
 import net.minecraft.core.dispenser.DispenseItemBehavior;
 import net.minecraft.network.chat.Component;
@@ -35,11 +35,11 @@ public class ChiselItem extends Item {
         @Override
         protected ItemStack execute(BlockSource blockSource, ItemStack stack) {
 
-            Direction direction1 = blockSource.getBlockState().getValue(DispenserBlock.FACING);
-            BlockPos targetPos = blockSource.getPos().relative(direction1);
+            Direction direction1 = blockSource.state().getValue(DispenserBlock.FACING);
+            BlockPos targetPos = blockSource.pos().relative(direction1);
 
             Direction direction2 = direction1.getAxis() == Direction.Axis.Y ? Direction.NORTH : direction1;
-            Level level = blockSource.getLevel();
+            Level level = blockSource.level();
             BlockState state = level.getBlockState(targetPos);
             Block block = state.getBlock();
 
@@ -51,6 +51,7 @@ public class ChiselItem extends Item {
             return flag1 && flag2 ? BlockUtils.dispenserCarve(block, level, targetPos, state, stack, (ChiselItem) item, direction2)
                     : super.execute(blockSource, stack);
         }
+
     };
 
     public ChiselItem(Properties property) {
@@ -90,7 +91,7 @@ public class ChiselItem extends Item {
             components.add(Component.translatable("tooltip.wood_enjoyer.chisel_desc_0").withStyle(ChatFormatting.GRAY));
             components.add(Component.translatable("tooltip.wood_enjoyer.chisel_desc_1").withStyle(ChatFormatting.GRAY));
         } else {
-            components.add(Component.literal("Set to: " + this.getSelectedModel(stack).getCapitalizedName()).withStyle(ChatFormatting.GRAY));
+            components.add(Component.translatable("tooltip.wood_enjoyer.chisel_desc_2").withStyle(ChatFormatting.GRAY).append(this.getSelectedModel(stack).getTranslatable()));
         }
     }
 

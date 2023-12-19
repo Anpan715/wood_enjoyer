@@ -1,7 +1,6 @@
 package github.poscard8.wood_enjoyer.init.registry;
 
 import github.poscard8.wood_enjoyer.common.block.*;
-import github.poscard8.wood_enjoyer.common.util.ModUtils;
 import github.poscard8.wood_enjoyer.common.util.ModdedWoodType;
 import github.poscard8.wood_enjoyer.common.util.registry.BlockModelType;
 import github.poscard8.wood_enjoyer.common.util.registry.BlockWrapper;
@@ -29,107 +28,109 @@ public abstract class ModBlocks {
     private static final DeferredRegister<Block> PLACEHOLDER = DeferredRegister.create(ForgeRegistries.BLOCKS, "");
     public static final List<BlockWrapper> ALL = new ArrayList<>();
 
-    public static final BlockWrapper WALNUT_LOG = log(ModdedWoodType.WALNUT);
-    public static final BlockWrapper WALNUT_WOOD = wood(ModdedWoodType.WALNUT);
-    public static final BlockWrapper STRIPPED_WALNUT_LOG = strippedLog(ModdedWoodType.WALNUT);
-    public static final BlockWrapper STRIPPED_WALNUT_WOOD = strippedWood(ModdedWoodType.WALNUT);
-    public static final BlockWrapper WALNUT_PLANKS = planks(ModdedWoodType.WALNUT).noBlockStates();
-    public static final BlockWrapper WALNUT_STAIRS = stairs(ModdedWoodType.WALNUT).noBlockStates().noItemModels();
-    public static final BlockWrapper WALNUT_SLAB = slab(ModdedWoodType.WALNUT).noBlockStates();
-    public static final BlockWrapper WALNUT_FENCE = fence(ModdedWoodType.WALNUT).noBlockStates().noItemModels();
-    public static final BlockWrapper WALNUT_FENCE_GATE = fenceGate(ModdedWoodType.WALNUT).noBlockStates();
-    public static final BlockWrapper WALNUT_DOOR = door(ModdedWoodType.WALNUT);
-    public static final BlockWrapper WALNUT_TRAPDOOR = trapdoor(ModdedWoodType.WALNUT);
-    public static final BlockWrapper WALNUT_PRESSURE_PLATE = pressurePlate(ModdedWoodType.WALNUT).noBlockStates();
-    public static final BlockWrapper WALNUT_BUTTON = button(ModdedWoodType.WALNUT).noBlockStates().noItemModels();
-    public static final BlockWrapper WALNUT_SIGN = sign(ModdedWoodType.WALNUT);
-    public static final BlockWrapper WALNUT_HANGING_SIGN = hangingSign(ModdedWoodType.WALNUT);
+    public static final BlockWrapper
+            WALNUT_LOG = log(ModdedWoodType.WALNUT),
+            WALNUT_WOOD = wood(ModdedWoodType.WALNUT),
+            STRIPPED_WALNUT_LOG = strippedLog(ModdedWoodType.WALNUT),
+            STRIPPED_WALNUT_WOOD = strippedWood(ModdedWoodType.WALNUT),
+            WALNUT_PLANKS = planks(ModdedWoodType.WALNUT).noBlockStates(),
+            WALNUT_STAIRS = stairs(ModdedWoodType.WALNUT).noBlockStates().noItemModels(),
+            WALNUT_SLAB = slab(ModdedWoodType.WALNUT).noBlockStates(),
+            WALNUT_FENCE = fence(ModdedWoodType.WALNUT).noBlockStates().noItemModels(),
+            WALNUT_FENCE_GATE = fenceGate(ModdedWoodType.WALNUT).noBlockStates(),
+            WALNUT_DOOR = door(ModdedWoodType.WALNUT),
+            WALNUT_TRAPDOOR = trapdoor(ModdedWoodType.WALNUT),
+            WALNUT_PRESSURE_PLATE = pressurePlate(ModdedWoodType.WALNUT).noBlockStates(),
+            WALNUT_BUTTON = button(ModdedWoodType.WALNUT).noBlockStates().noItemModels(),
+            WALNUT_SIGN = sign(ModdedWoodType.WALNUT),
+            WALNUT_HANGING_SIGN = hangingSign(ModdedWoodType.WALNUT),
 
-    public static final BlockWrapper CHESTNUT_LOG = log(ModdedWoodType.CHESTNUT);
-    public static final BlockWrapper CHESTNUT_WOOD = wood(ModdedWoodType.CHESTNUT);
-    public static final BlockWrapper STRIPPED_CHESTNUT_LOG = strippedLog(ModdedWoodType.CHESTNUT);
-    public static final BlockWrapper STRIPPED_CHESTNUT_WOOD = strippedWood(ModdedWoodType.CHESTNUT);
-    public static final BlockWrapper CHESTNUT_PLANKS = planks(ModdedWoodType.CHESTNUT);
-    public static final BlockWrapper CHESTNUT_STAIRS = stairs(ModdedWoodType.CHESTNUT);
-    public static final BlockWrapper CHESTNUT_SLAB = slab(ModdedWoodType.CHESTNUT);
-    public static final BlockWrapper CHESTNUT_FENCE = fence(ModdedWoodType.CHESTNUT);
-    public static final BlockWrapper CHESTNUT_FENCE_GATE = fenceGate(ModdedWoodType.CHESTNUT);
-    public static final BlockWrapper CHESTNUT_DOOR = door(ModdedWoodType.CHESTNUT);
-    public static final BlockWrapper CHESTNUT_TRAPDOOR = trapdoor(ModdedWoodType.CHESTNUT);
-    public static final BlockWrapper CHESTNUT_PRESSURE_PLATE = pressurePlate(ModdedWoodType.CHESTNUT);
-    public static final BlockWrapper CHESTNUT_BUTTON = button(ModdedWoodType.CHESTNUT);
-    public static final BlockWrapper CHESTNUT_SIGN = sign(ModdedWoodType.CHESTNUT);
-    public static final BlockWrapper CHESTNUT_HANGING_SIGN = hangingSign(ModdedWoodType.CHESTNUT);
+            CHESTNUT_LOG = log(ModdedWoodType.CHESTNUT),
+            CHESTNUT_WOOD = wood(ModdedWoodType.CHESTNUT),
+            STRIPPED_CHESTNUT_LOG = strippedLog(ModdedWoodType.CHESTNUT),
+            STRIPPED_CHESTNUT_WOOD = strippedWood(ModdedWoodType.CHESTNUT),
+            CHESTNUT_PLANKS = planks(ModdedWoodType.CHESTNUT),
+            CHESTNUT_STAIRS = stairs(ModdedWoodType.CHESTNUT),
+            CHESTNUT_SLAB = slab(ModdedWoodType.CHESTNUT),
+            CHESTNUT_FENCE = fence(ModdedWoodType.CHESTNUT),
+            CHESTNUT_FENCE_GATE = fenceGate(ModdedWoodType.CHESTNUT),
+            CHESTNUT_DOOR = door(ModdedWoodType.CHESTNUT),
+            CHESTNUT_TRAPDOOR = trapdoor(ModdedWoodType.CHESTNUT),
+            CHESTNUT_PRESSURE_PLATE = pressurePlate(ModdedWoodType.CHESTNUT),
+            CHESTNUT_BUTTON = button(ModdedWoodType.CHESTNUT),
+            CHESTNUT_SIGN = sign(ModdedWoodType.CHESTNUT),
+            CHESTNUT_HANGING_SIGN = hangingSign(ModdedWoodType.CHESTNUT),
 
-    public static final BlockWrapper LUNAR_LOG = log(ModdedWoodType.LUNAR);
-    public static final BlockWrapper LUNAR_WOOD = wood(ModdedWoodType.LUNAR);
-    public static final BlockWrapper STRIPPED_LUNAR_LOG = strippedLog(ModdedWoodType.LUNAR);
-    public static final BlockWrapper STRIPPED_LUNAR_WOOD = strippedWood(ModdedWoodType.LUNAR);
-    public static final BlockWrapper LUNAR_PLANKS = planks(ModdedWoodType.LUNAR);
-    public static final BlockWrapper LUNAR_STAIRS = stairs(ModdedWoodType.LUNAR);
-    public static final BlockWrapper LUNAR_SLAB = slab(ModdedWoodType.LUNAR);
-    public static final BlockWrapper LUNAR_FENCE = fence(ModdedWoodType.LUNAR);
-    public static final BlockWrapper LUNAR_FENCE_GATE = fenceGate(ModdedWoodType.LUNAR);
-    public static final BlockWrapper LUNAR_DOOR = door(ModdedWoodType.LUNAR);
-    public static final BlockWrapper LUNAR_TRAPDOOR = trapdoor(ModdedWoodType.LUNAR);
-    public static final BlockWrapper LUNAR_PRESSURE_PLATE = pressurePlate(ModdedWoodType.LUNAR);
-    public static final BlockWrapper LUNAR_BUTTON = button(ModdedWoodType.LUNAR);
-    public static final BlockWrapper LUNAR_SIGN = sign(ModdedWoodType.LUNAR);
-    public static final BlockWrapper LUNAR_HANGING_SIGN = hangingSign(ModdedWoodType.LUNAR);
+            LUNAR_LOG = log(ModdedWoodType.LUNAR),
+            LUNAR_WOOD = wood(ModdedWoodType.LUNAR),
+            STRIPPED_LUNAR_LOG = strippedLog(ModdedWoodType.LUNAR),
+            STRIPPED_LUNAR_WOOD = strippedWood(ModdedWoodType.LUNAR),
+            LUNAR_PLANKS = planks(ModdedWoodType.LUNAR),
+            LUNAR_STAIRS = stairs(ModdedWoodType.LUNAR),
+            LUNAR_SLAB = slab(ModdedWoodType.LUNAR),
+            LUNAR_FENCE = fence(ModdedWoodType.LUNAR),
+            LUNAR_FENCE_GATE = fenceGate(ModdedWoodType.LUNAR),
+            LUNAR_DOOR = door(ModdedWoodType.LUNAR),
+            LUNAR_TRAPDOOR = trapdoor(ModdedWoodType.LUNAR),
+            LUNAR_PRESSURE_PLATE = pressurePlate(ModdedWoodType.LUNAR),
+            LUNAR_BUTTON = button(ModdedWoodType.LUNAR),
+            LUNAR_SIGN = sign(ModdedWoodType.LUNAR),
+            LUNAR_HANGING_SIGN = hangingSign(ModdedWoodType.LUNAR),
 
-    public static final BlockWrapper CUT_OAK_PLANKS = cutPlanks(Blocks.OAK_PLANKS);
-    public static final BlockWrapper CUT_SPRUCE_PLANKS = cutPlanks(Blocks.SPRUCE_PLANKS);
-    public static final BlockWrapper CUT_BIRCH_PLANKS = cutPlanks(Blocks.BIRCH_PLANKS);
-    public static final BlockWrapper CUT_JUNGLE_PLANKS = cutPlanks(Blocks.JUNGLE_PLANKS);
-    public static final BlockWrapper CUT_ACACIA_PLANKS = cutPlanks(Blocks.ACACIA_PLANKS);
-    public static final BlockWrapper CUT_DARK_OAK_PLANKS = cutPlanks(Blocks.DARK_OAK_PLANKS);
-    public static final BlockWrapper CUT_MANGROVE_PLANKS = cutPlanks(Blocks.MANGROVE_PLANKS);
-    public static final BlockWrapper CUT_CHERRY_PLANKS = cutPlanks(Blocks.CHERRY_PLANKS);
-    public static final BlockWrapper CUT_BAMBOO_PLANKS = cutPlanks(Blocks.BAMBOO_PLANKS);
-    public static final BlockWrapper CUT_CRIMSON_PLANKS = cutPlanks(Blocks.CRIMSON_PLANKS);
-    public static final BlockWrapper CUT_WARPED_PLANKS = cutPlanks(Blocks.WARPED_PLANKS);
-    public static final BlockWrapper CUT_WALNUT_PLANKS = cutPlanks(ModdedWoodType.WALNUT).noBlockStates();
-    public static final BlockWrapper CUT_CHESTNUT_PLANKS = cutPlanks(ModdedWoodType.CHESTNUT);
-    public static final BlockWrapper CUT_LUNAR_PLANKS = cutPlanks(ModdedWoodType.LUNAR);
+            CUT_OAK_PLANKS = cutPlanks(Blocks.OAK_PLANKS),
+            CUT_SPRUCE_PLANKS = cutPlanks(Blocks.SPRUCE_PLANKS),
+            CUT_BIRCH_PLANKS = cutPlanks(Blocks.BIRCH_PLANKS),
+            CUT_JUNGLE_PLANKS = cutPlanks(Blocks.JUNGLE_PLANKS),
+            CUT_ACACIA_PLANKS = cutPlanks(Blocks.ACACIA_PLANKS),
+            CUT_DARK_OAK_PLANKS = cutPlanks(Blocks.DARK_OAK_PLANKS),
+            CUT_MANGROVE_PLANKS = cutPlanks(Blocks.MANGROVE_PLANKS),
+            CUT_CHERRY_PLANKS = cutPlanks(Blocks.CHERRY_PLANKS),
+            CUT_BAMBOO_PLANKS = cutPlanks(Blocks.BAMBOO_PLANKS),
+            CUT_CRIMSON_PLANKS = cutPlanks(Blocks.CRIMSON_PLANKS),
+            CUT_WARPED_PLANKS = cutPlanks(Blocks.WARPED_PLANKS),
+            CUT_WALNUT_PLANKS = cutPlanks(ModdedWoodType.WALNUT).noBlockStates(),
+            CUT_CHESTNUT_PLANKS = cutPlanks(ModdedWoodType.CHESTNUT),
+            CUT_LUNAR_PLANKS = cutPlanks(ModdedWoodType.LUNAR),
 
-    public static final BlockWrapper OAK_SCULPTURE = sculpture(CUT_OAK_PLANKS);
-    public static final BlockWrapper SPRUCE_SCULPTURE = sculpture(CUT_SPRUCE_PLANKS);
-    public static final BlockWrapper BIRCH_SCULPTURE = sculpture(CUT_BIRCH_PLANKS);
-    public static final BlockWrapper JUNGLE_SCULPTURE = sculpture(CUT_JUNGLE_PLANKS);
-    public static final BlockWrapper ACACIA_SCULPTURE = sculpture(CUT_ACACIA_PLANKS);
-    public static final BlockWrapper DARK_OAK_SCULPTURE = sculpture(CUT_DARK_OAK_PLANKS);
-    public static final BlockWrapper MANGROVE_SCULPTURE = sculpture(CUT_MANGROVE_PLANKS);
-    public static final BlockWrapper CHERRY_SCULPTURE = sculpture(CUT_CHERRY_PLANKS);
-    public static final BlockWrapper BAMBOO_SCULPTURE = sculpture(CUT_BAMBOO_PLANKS);
-    public static final BlockWrapper CRIMSON_SCULPTURE = sculpture(CUT_CRIMSON_PLANKS);
-    public static final BlockWrapper WARPED_SCULPTURE = sculpture(CUT_WARPED_PLANKS);
-    public static final BlockWrapper WALNUT_SCULPTURE = sculpture(CUT_WALNUT_PLANKS);
-    public static final BlockWrapper CHESTNUT_SCULPTURE = sculpture(CUT_CHESTNUT_PLANKS);
-    public static final BlockWrapper LUNAR_SCULPTURE = sculpture(CUT_LUNAR_PLANKS);
+            OAK_SCULPTURE = sculpture(CUT_OAK_PLANKS),
+            SPRUCE_SCULPTURE = sculpture(CUT_SPRUCE_PLANKS),
+            BIRCH_SCULPTURE = sculpture(CUT_BIRCH_PLANKS),
+            JUNGLE_SCULPTURE = sculpture(CUT_JUNGLE_PLANKS),
+            ACACIA_SCULPTURE = sculpture(CUT_ACACIA_PLANKS),
+            DARK_OAK_SCULPTURE = sculpture(CUT_DARK_OAK_PLANKS),
+            MANGROVE_SCULPTURE = sculpture(CUT_MANGROVE_PLANKS),
+            CHERRY_SCULPTURE = sculpture(CUT_CHERRY_PLANKS),
+            BAMBOO_SCULPTURE = sculpture(CUT_BAMBOO_PLANKS),
+            CRIMSON_SCULPTURE = sculpture(CUT_CRIMSON_PLANKS),
+            WARPED_SCULPTURE = sculpture(CUT_WARPED_PLANKS),
+            WALNUT_SCULPTURE = sculpture(CUT_WALNUT_PLANKS),
+            CHESTNUT_SCULPTURE = sculpture(CUT_CHESTNUT_PLANKS),
+            LUNAR_SCULPTURE = sculpture(CUT_LUNAR_PLANKS),
 
-    public static final BlockWrapper OAK_FIREWOOD = firewood(Blocks.OAK_PLANKS);
-    public static final BlockWrapper SPRUCE_FIREWOOD = firewood(Blocks.SPRUCE_PLANKS);
-    public static final BlockWrapper BIRCH_FIREWOOD = firewood(Blocks.BIRCH_PLANKS);
-    public static final BlockWrapper JUNGLE_FIREWOOD = firewood(Blocks.JUNGLE_PLANKS);
-    public static final BlockWrapper ACACIA_FIREWOOD = firewood(Blocks.ACACIA_PLANKS);
-    public static final BlockWrapper DARK_OAK_FIREWOOD = firewood(Blocks.DARK_OAK_PLANKS);
-    public static final BlockWrapper MANGROVE_FIREWOOD = firewood(Blocks.MANGROVE_PLANKS);
-    public static final BlockWrapper CHERRY_FIREWOOD = firewood(Blocks.CHERRY_PLANKS);
-    public static final BlockWrapper BAMBOO_FIREWOOD = firewood(Blocks.BAMBOO_PLANKS);
-    public static final BlockWrapper CRIMSON_FIREWOOD = firewood(Blocks.CRIMSON_PLANKS);
-    public static final BlockWrapper WARPED_FIREWOOD = firewood(Blocks.WARPED_PLANKS);
-    public static final BlockWrapper WALNUT_FIREWOOD = firewood(ModdedWoodType.WALNUT);
-    public static final BlockWrapper CHESTNUT_FIREWOOD = firewood(ModdedWoodType.CHESTNUT);
-    public static final BlockWrapper LUNAR_FIREWOOD = firewood(ModdedWoodType.LUNAR);
+            OAK_FIREWOOD = firewood(Blocks.OAK_PLANKS),
+            SPRUCE_FIREWOOD = firewood(Blocks.SPRUCE_PLANKS),
+            BIRCH_FIREWOOD = firewood(Blocks.BIRCH_PLANKS),
+            JUNGLE_FIREWOOD = firewood(Blocks.JUNGLE_PLANKS),
+            ACACIA_FIREWOOD = firewood(Blocks.ACACIA_PLANKS),
+            DARK_OAK_FIREWOOD = firewood(Blocks.DARK_OAK_PLANKS),
+            MANGROVE_FIREWOOD = firewood(Blocks.MANGROVE_PLANKS),
+            CHERRY_FIREWOOD = firewood(Blocks.CHERRY_PLANKS),
+            BAMBOO_FIREWOOD = firewood(Blocks.BAMBOO_PLANKS),
+            CRIMSON_FIREWOOD = firewood(Blocks.CRIMSON_PLANKS),
+            WARPED_FIREWOOD = firewood(Blocks.WARPED_PLANKS),
+            WALNUT_FIREWOOD = firewood(ModdedWoodType.WALNUT),
+            CHESTNUT_FIREWOOD = firewood(ModdedWoodType.CHESTNUT),
+            LUNAR_FIREWOOD = firewood(ModdedWoodType.LUNAR);
 
     public static final BlockWrapper STUMP = new BlockWrapper("stump", () -> new StumpBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).strength(24.0F).requiresCorrectToolForDrops()), BlockModelType.MISC).noBlockStates().noRecipes();
 
-    public static final BlockWrapper WALNUT_LEAVES = leaves(ModdedWoodType.WALNUT);
-    public static final BlockWrapper CHESTNUT_LEAVES = leaves(ModdedWoodType.CHESTNUT);
-    public static final BlockWrapper LUNAR_ROOTS = new BlockWrapper("lunar_roots", () -> new LunarRootsBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_STEM).strength(1, 0.4F).mapColor(MapColor.COLOR_PURPLE).noOcclusion().noCollission()), BlockModelType.MISC).noBlockStates().noItemModels().noLootTables();
-    public static final BlockWrapper WALNUT_SAPLING = sapling(ModdedWoodType.WALNUT, new WalnutTreeGrower());
-    public static final BlockWrapper CHESTNUT_SAPLING = sapling(ModdedWoodType.CHESTNUT, new ChestnutTreeGrower());
-    public static final BlockWrapper LUNAR_SHRUB = new BlockWrapper("lunar_shrub", () -> new LunarShrubBlock(new LunarTreeGrower(), BlockBehaviour.Properties.copy(LUNAR_ROOTS.get()).instabreak()), BlockModelType.MISC).noBlockStates().noItemModels();
+    public static final BlockWrapper
+            WALNUT_LEAVES = leaves(ModdedWoodType.WALNUT),
+            CHESTNUT_LEAVES = leaves(ModdedWoodType.CHESTNUT),
+            LUNAR_ROOTS = new BlockWrapper("lunar_roots", () -> new LunarRootsBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_STEM).strength(1, 0.4F).mapColor(MapColor.COLOR_PURPLE).noOcclusion().noCollission()), BlockModelType.MISC).noBlockStates().noItemModels().noLootTables(),
+            WALNUT_SAPLING = sapling(ModdedWoodType.WALNUT, new WalnutTreeGrower()),
+            CHESTNUT_SAPLING = sapling(ModdedWoodType.CHESTNUT, new ChestnutTreeGrower()),
+            LUNAR_SHRUB = new BlockWrapper("lunar_shrub", () -> new LunarShrubBlock(new LunarTreeGrower(), BlockBehaviour.Properties.copy(LUNAR_ROOTS.get()).instabreak()), BlockModelType.MISC).noBlockStates().noItemModels();
 
     protected static BlockWrapper log(ModdedWoodType woodType) {
         return new BlockWrapper(woodType, () -> new ModdedLogBlock(woodType), BlockModelType.LOG);
@@ -192,7 +193,7 @@ public abstract class ModBlocks {
     }
 
     protected static BlockWrapper cutPlanks(Block planks) {
-        return new BlockWrapper(ModUtils.shortenName(planks.getDescriptionId(), 7).substring(16), () -> new CutPlankBlock(BlockBehaviour.Properties.copy(planks)), BlockModelType.CUT_PLANKS).setIngredient((BlockItem) planks.asItem());
+        return new BlockWrapper(planks.getDescriptionId().substring(16, planks.getDescriptionId().length() - 7), () -> new CutPlankBlock(BlockBehaviour.Properties.copy(planks)), BlockModelType.CUT_PLANKS).setIngredient((BlockItem) planks.asItem());
     }
 
     protected static BlockWrapper cutPlanks(ModdedWoodType woodType) {
@@ -200,7 +201,7 @@ public abstract class ModBlocks {
     }
 
     protected static BlockWrapper firewood(Block planks) {
-        return new BlockWrapper(ModUtils.shortenName(planks.getDescriptionId(), 7).substring(16), () -> new FirewoodBlock(planks), BlockModelType.FIREWOOD).setIngredient((BlockItem) planks.asItem());
+        return new BlockWrapper(planks.getDescriptionId().substring(16, planks.getDescriptionId().length() - 7), () -> new FirewoodBlock(planks), BlockModelType.FIREWOOD).setIngredient((BlockItem) planks.asItem());
     }
 
     protected static BlockWrapper firewood(ModdedWoodType woodType) {

@@ -3,8 +3,12 @@
     "icon": {
       "item": "wood_enjoyer:copper_chisel"
     },
-    "title": "Carpenter",
-    "description": "Carve a sculpture",
+    "title": {
+      "translate": "advancement.wood_enjoyer.carpenter"
+    },
+    "description": {
+      "translate": "advancement_desc.wood_enjoyer.carpenter"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

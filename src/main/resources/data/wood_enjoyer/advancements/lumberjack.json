@@ -3,8 +3,12 @@
     "icon": {
       "item": "minecraft:iron_axe"
     },
-    "title": "Lumberjack",
-    "description": "Chop wood using a stump",
+    "title": {
+      "translate": "advancement.wood_enjoyer.lumberjack"
+    },
+    "description": {
+      "translate": "advancement_desc.wood_enjoyer.lumberjack"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

@@ -2,7 +2,7 @@ package github.poscard8.wood_enjoyer.common.util.registry;
 
 import github.poscard8.wood_enjoyer.WoodEnjoyer;
 import github.poscard8.wood_enjoyer.common.block.ModdedSignBlock;
-import github.poscard8.wood_enjoyer.common.util.ModUtils;
+import github.poscard8.wood_enjoyer.common.util.ItemUtils;
 import github.poscard8.wood_enjoyer.common.util.ModdedWoodType;
 import github.poscard8.wood_enjoyer.init.registry.ModBlocks;
 import net.minecraft.resources.ResourceLocation;
@@ -20,6 +20,13 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Objects;
 import java.util.function.Supplier;
+
+/*
+Exists to make block registration and JSON file generation easier.
+Registers blocks and block items at once.
+Still uses deferred register and registry objects, but they are hidden/private.
+Most methods utilize BlockModelType class, which is customized for my needs.
+*/
 
 public class BlockWrapper implements Supplier<Block>, ItemLike {
 
@@ -146,7 +153,7 @@ public class BlockWrapper implements Supplier<Block>, ItemLike {
                 return null;
             }
         }
-        return (BlockItem) ModUtils.itemFromLocation(name);
+        return (BlockItem) ItemUtils.fromLocation(name);
     }
 
 

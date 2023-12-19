@@ -39,10 +39,6 @@ public class ModItemModelProvider extends ItemModelProvider {
     }
 
     protected void readItemWrappers(ItemWrapper wrapper) {
-        if (!wrapper.hasItemModels) {
-            return;
-        }
-
         withExistingParent(wrapper.getName(), wrapper.getParentModel()).texture("layer0", wrapper.getTextureLocation());
     }
 

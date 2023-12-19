@@ -18,7 +18,7 @@ public abstract class AxeItemMixin {
     private static void addStrippableLogs(BlockState state, CallbackInfoReturnable<BlockState> ci) {
         BlockWrapper wrapper = BlockUtils.getWrapper(state.getBlock());
 
-        if (wrapper != null && BlockUtils.STRIPPED_LOGS.containsKey(wrapper)) {
+        if (wrapper != null && BlockUtils.STRIPPED_MODDED_LOGS.containsKey(wrapper)) {
             ci.setReturnValue(BlockUtils.getStrippedVariant(state.getBlock()).defaultBlockState().setValue(RotatedPillarBlock.AXIS, state.getValue(RotatedPillarBlock.AXIS)));
         }
     }

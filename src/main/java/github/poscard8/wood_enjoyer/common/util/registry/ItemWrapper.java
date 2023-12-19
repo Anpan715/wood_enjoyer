@@ -14,14 +14,14 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Supplier;
 
+// Exists for the same purpose with BlockWrapper class, but is simpler.
+
 public class ItemWrapper implements Supplier<Item>, ItemLike {
 
 
     private final @Nullable BlockWrapper anchor;
     private final RegistryObject<Item> holder;
     private final ItemModelType modelType;
-
-    public boolean hasItemModels = true;
 
     public ItemWrapper(String name, Supplier<Item> sup, ItemModelType modelType) {
         this(name, sup, modelType, null);
@@ -80,11 +80,6 @@ public class ItemWrapper implements Supplier<Item>, ItemLike {
 
     public boolean hasAnchor() {
         return this.anchor != null;
-    }
-
-    public ItemWrapper noModels() {
-        this.hasItemModels = false;
-        return this;
     }
 
     public ItemStack getStack() {

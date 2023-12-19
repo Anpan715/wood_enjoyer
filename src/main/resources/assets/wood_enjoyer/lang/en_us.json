@@ -123,8 +123,21 @@
 
   "enchantment.wood_enjoyer.milling": "Milling",
 
+  "advancement.wood_enjoyer.wood_enjoyer": "Wood Enjoyer",
+  "advancement.wood_enjoyer.collector": "Collector",
+  "advancement.wood_enjoyer.handle": "What Does This Do?",
+  "advancement.wood_enjoyer.lumberjack": "Lumberjack",
+  "advancement.wood_enjoyer.carpenter": "Carpenter",
+
+  "advancement_desc.wood_enjoyer.wood_enjoyer": "The Beginning...",
+  "advancement_desc.wood_enjoyer.collector": "Collect every vanilla and Wood Enjoyer plank type",
+  "advancement_desc.wood_enjoyer.handle": "Craft a handle",
+  "advancement_desc.wood_enjoyer.lumberjack": "Chop wood using a stump",
+  "advancement_desc.wood_enjoyer.carpenter": "Carve a sculpture",
+
   "tooltip.wood_enjoyer.chisel_desc_0": "Carves cut planks.",
   "tooltip.wood_enjoyer.chisel_desc_1": "Shift right-click a block to select/unselect a model.",
+  "tooltip.wood_enjoyer.chisel_desc_2": "Set to: ",
   "tooltip.wood_enjoyer.handle_applies_to": "Applies (at anvil) to:",
   "tooltip.wood_enjoyer.handle_applicable": "Tools, Bows & Fishing Rods",
   "tooltip.wood_enjoyer.warped_handle": "Arcane",
@@ -132,6 +145,31 @@
 
   "subtitles.wood_enjoyer.wood_carve": "Wood carved",
   "subtitles.wood_enjoyer.wood_chop": "Wood chopped",
+
+  "sculpture.wood_enjoyer.creeper": "Creeper",
+  "sculpture.wood_enjoyer.enderman": "Enderman",
+  "sculpture.wood_enjoyer.blaze": "Blaze",
+  "sculpture.wood_enjoyer.vex": "Vex",
+  "sculpture.wood_enjoyer.wolf": "Wolf",
+  "sculpture.wood_enjoyer.rabbit": "Rabbit",
+  "sculpture.wood_enjoyer.villager": "Villager",
+  "sculpture.wood_enjoyer.skull": "Skull",
+  "sculpture.wood_enjoyer.angel": "Angel",
+  "sculpture.wood_enjoyer.heart": "Heart",
+  "sculpture.wood_enjoyer.gem": "Gem",
+  "sculpture.wood_enjoyer.axe": "Axe",
+  "sculpture.wood_enjoyer.sword": "Sword",
+  "sculpture.wood_enjoyer.anchor": "Anchor",
+  "sculpture.wood_enjoyer.hammer": "Hammer",
+  "sculpture.wood_enjoyer.book": "Book",
+  "sculpture.wood_enjoyer.note": "Note",
+  "sculpture.wood_enjoyer.dice": "Dice",
+  "sculpture.wood_enjoyer.pawn": "Pawn",
+  "sculpture.wood_enjoyer.rook": "Rook",
+  "sculpture.wood_enjoyer.knight": "Knight",
+  "sculpture.wood_enjoyer.bishop": "Bishop",
+  "sculpture.wood_enjoyer.queen": "Queen",
+  "sculpture.wood_enjoyer.king": "King",
 
   "tab.wood_enjoyer": "Wood Enjoyer"
 }

@@ -3,8 +3,12 @@
     "icon": {
       "item": "wood_enjoyer:walnut_planks"
     },
-    "title": "Wood Enjoyer",
-    "description": "The beginning...",
+    "title": {
+      "translate": "advancement.wood_enjoyer.wood_enjoyer"
+    },
+    "description": {
+      "translate": "advancement_desc.wood_enjoyer.wood_enjoyer"
+    },
     "background": "wood_enjoyer:textures/block/cut_chestnut_planks.png",
     "frame": "task",
     "show_toast": false,

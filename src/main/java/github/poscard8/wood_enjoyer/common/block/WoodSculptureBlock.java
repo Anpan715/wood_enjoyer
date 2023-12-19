@@ -5,8 +5,10 @@ import github.poscard8.wood_enjoyer.common.util.BlockUtils;
 import github.poscard8.wood_enjoyer.common.util.registry.BlockWrapper;
 import github.poscard8.wood_enjoyer.init.registry.ModBlocks;
 import github.poscard8.wood_enjoyer.init.registry.ModSounds;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.InteractionHand;
@@ -169,13 +171,13 @@ public class WoodSculptureBlock extends Block implements SimpleWaterloggedBlock 
             return this.toString();
         }
 
-        public String getCapitalizedName() {
-            return this.toString().substring(0, 1).toUpperCase() + this.toString().substring(1);
-        }
-
         @Override
         public String toString() {
             return super.toString().toLowerCase();
+        }
+
+        public Component getTranslatable() {
+            return Component.translatable("sculpture.wood_enjoyer." + this).withStyle(ChatFormatting.GRAY);
         }
 
         public Model next() {

@@ -2,7 +2,6 @@ package github.poscard8.wood_enjoyer.common.block;
 
 import github.poscard8.wood_enjoyer.common.blockentity.StumpBlockEntity;
 import github.poscard8.wood_enjoyer.common.util.BlockUtils;
-import github.poscard8.wood_enjoyer.init.registry.ModBlocks;
 import github.poscard8.wood_enjoyer.init.registry.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -22,7 +21,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -35,31 +33,11 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 @SuppressWarnings("deprecation")
 public class StumpBlock extends BaseEntityBlock {
-
-    public static final List<ItemLike> LOGS = List.of(
-            Blocks.OAK_LOG, Blocks.SPRUCE_LOG,
-            Blocks.BIRCH_LOG, Blocks.JUNGLE_LOG,
-            Blocks.ACACIA_LOG, Blocks.DARK_OAK_LOG,
-            Blocks.MANGROVE_LOG, Blocks.CHERRY_LOG,
-            Blocks.BAMBOO_BLOCK, Blocks.CRIMSON_STEM,
-            Blocks.WARPED_STEM, ModBlocks.WALNUT_LOG,
-            ModBlocks.CHESTNUT_LOG, ModBlocks.LUNAR_LOG
-    );
-
-    public static final List<ItemLike> FIREWOODS = List.of(
-            ModBlocks.OAK_FIREWOOD, ModBlocks.SPRUCE_FIREWOOD,
-            ModBlocks.BIRCH_FIREWOOD, ModBlocks.JUNGLE_FIREWOOD,
-            ModBlocks.ACACIA_FIREWOOD, ModBlocks.DARK_OAK_FIREWOOD,
-            ModBlocks.MANGROVE_FIREWOOD, ModBlocks.CHERRY_FIREWOOD,
-            ModBlocks.BAMBOO_FIREWOOD, ModBlocks.CRIMSON_FIREWOOD,
-            ModBlocks.WARPED_FIREWOOD, ModBlocks.WALNUT_FIREWOOD,
-            ModBlocks.CHESTNUT_FIREWOOD, ModBlocks.LUNAR_FIREWOOD
-    );
 
     public static final BooleanProperty NORTH = BlockStateProperties.NORTH;
     public static final BooleanProperty SOUTH = BlockStateProperties.SOUTH;
@@ -148,9 +126,9 @@ public class StumpBlock extends BaseEntityBlock {
         ItemStack stack2 = player.getItemInHand(InteractionHand.OFF_HAND);
 
 
-        boolean flag = LOGS.stream().map(ItemLike::asItem).toList().contains(stack2.getItem());
+        boolean flag = BlockUtils.LOGS.stream().map(ItemLike::asItem).toList().contains(stack2.getItem());
         boolean flag2 = stack.getItem() instanceof AxeItem;
-        boolean flag3 = LOGS.stream().map(ItemLike::asItem).toList().contains(stack.getItem());
+        boolean flag3 = BlockUtils.LOGS.stream().map(ItemLike::asItem).toList().contains(stack.getItem());
 
         BlockEntity blockEntity = level.getBlockEntity(position);
         if (blockEntity instanceof StumpBlockEntity stump) {
@@ -172,8 +150,12 @@ public class StumpBlock extends BaseEntityBlock {
 
     public InteractionResult dropFirewoodUse(StumpBlockEntity stump, Level level, Player player, BlockPos position) {
 
+        Random random = new Random();
+        float x = (random.nextInt(3) - 1) / 20.0F;
+        float z = (random.nextInt(3) - 1) / 20.0F;
+
         if (!player.isCreative()) {
-            level.addFreshEntity(new ItemEntity(level, position.getX() + 0.5F, position.getY() + 0.5F, position.getZ() + 0.5F, new ItemStack(stump.getFirewood(), 4), 0.05F, 0.05F, 0.05F));
+            level.addFreshEntity(new ItemEntity(level, position.getX() + 0.5F, position.getY() + 0.5F, position.getZ() + 0.5F, new ItemStack(stump.getFirewood(), 4), x, 0.02F, z));
         }
         stump.setLogCount(0);
         return InteractionResult.sidedSuccess(level.isClientSide);

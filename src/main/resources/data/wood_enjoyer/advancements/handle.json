@@ -3,8 +3,12 @@
     "icon": {
       "item": "wood_enjoyer:warped_handle"
     },
-    "title": "What Does This Do?",
-    "description": "Craft a handle",
+    "title": {
+      "translate": "advancement.wood_enjoyer.handle"
+    },
+    "description": {
+      "translate": "advancement_desc.wood_enjoyer.handle"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,

@@ -1,5 +1,6 @@
 package github.poscard8.wood_enjoyer.common.util;
 
+import com.google.common.collect.ImmutableMap;
 import github.poscard8.wood_enjoyer.WoodEnjoyer;
 import github.poscard8.wood_enjoyer.common.block.WoodSculptureBlock;
 import github.poscard8.wood_enjoyer.common.item.ChiselItem;
@@ -11,8 +12,10 @@ import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -20,14 +23,14 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicReference;
 
 public abstract class BlockUtils {
 
-    public static final Map<BlockWrapper, BlockWrapper> STRIPPED_LOGS = Map.of(
+    public static final Map<BlockWrapper, BlockWrapper> STRIPPED_MODDED_LOGS = Map.of(
             ModBlocks.WALNUT_LOG, ModBlocks.STRIPPED_WALNUT_LOG,
             ModBlocks.WALNUT_WOOD, ModBlocks.STRIPPED_WALNUT_WOOD,
             ModBlocks.CHESTNUT_LOG, ModBlocks.STRIPPED_CHESTNUT_LOG,
@@ -35,7 +38,42 @@ public abstract class BlockUtils {
             ModBlocks.LUNAR_LOG, ModBlocks.STRIPPED_LUNAR_LOG,
             ModBlocks.LUNAR_WOOD, ModBlocks.STRIPPED_LUNAR_WOOD
     );
-    public static final Map<BlockWrapper, BlockWrapper> SCULPTURES = new HashMap<>();
+
+    public static final ImmutableMap<BlockWrapper, BlockWrapper> SCULPTURES = new ImmutableMap.Builder<BlockWrapper, BlockWrapper>()
+            .put(ModBlocks.CUT_OAK_PLANKS, ModBlocks.OAK_SCULPTURE)
+            .put(ModBlocks.CUT_SPRUCE_PLANKS, ModBlocks.SPRUCE_SCULPTURE)
+            .put(ModBlocks.CUT_BIRCH_PLANKS, ModBlocks.BIRCH_SCULPTURE)
+            .put(ModBlocks.CUT_JUNGLE_PLANKS, ModBlocks.JUNGLE_SCULPTURE)
+            .put(ModBlocks.CUT_ACACIA_PLANKS, ModBlocks.ACACIA_SCULPTURE)
+            .put(ModBlocks.CUT_DARK_OAK_PLANKS, ModBlocks.DARK_OAK_SCULPTURE)
+            .put(ModBlocks.CUT_MANGROVE_PLANKS, ModBlocks.MANGROVE_SCULPTURE)
+            .put(ModBlocks.CUT_CHERRY_PLANKS, ModBlocks.CHERRY_SCULPTURE)
+            .put(ModBlocks.CUT_BAMBOO_PLANKS, ModBlocks.BAMBOO_SCULPTURE)
+            .put(ModBlocks.CUT_CRIMSON_PLANKS, ModBlocks.CRIMSON_SCULPTURE)
+            .put(ModBlocks.CUT_WARPED_PLANKS, ModBlocks.WARPED_SCULPTURE)
+            .put(ModBlocks.CUT_WALNUT_PLANKS, ModBlocks.WALNUT_SCULPTURE)
+            .put(ModBlocks.CUT_CHESTNUT_PLANKS, ModBlocks.CHESTNUT_SCULPTURE)
+            .put(ModBlocks.CUT_LUNAR_PLANKS, ModBlocks.LUNAR_SCULPTURE).build();
+
+    public static final List<ItemLike> LOGS = List.of(
+            Blocks.OAK_LOG, Blocks.SPRUCE_LOG,
+            Blocks.BIRCH_LOG, Blocks.JUNGLE_LOG,
+            Blocks.ACACIA_LOG, Blocks.DARK_OAK_LOG,
+            Blocks.MANGROVE_LOG, Blocks.CHERRY_LOG,
+            Blocks.BAMBOO_BLOCK, Blocks.CRIMSON_STEM,
+            Blocks.WARPED_STEM, ModBlocks.WALNUT_LOG,
+            ModBlocks.CHESTNUT_LOG, ModBlocks.LUNAR_LOG
+    );
+
+    public static final List<ItemLike> FIREWOODS = List.of(
+            ModBlocks.OAK_FIREWOOD, ModBlocks.SPRUCE_FIREWOOD,
+            ModBlocks.BIRCH_FIREWOOD, ModBlocks.JUNGLE_FIREWOOD,
+            ModBlocks.ACACIA_FIREWOOD, ModBlocks.DARK_OAK_FIREWOOD,
+            ModBlocks.MANGROVE_FIREWOOD, ModBlocks.CHERRY_FIREWOOD,
+            ModBlocks.BAMBOO_FIREWOOD, ModBlocks.CRIMSON_FIREWOOD,
+            ModBlocks.WARPED_FIREWOOD, ModBlocks.WALNUT_FIREWOOD,
+            ModBlocks.CHESTNUT_FIREWOOD, ModBlocks.LUNAR_FIREWOOD
+    );
 
     public static VoxelShape shape(double x, double y, double z) {
         return Block.box(8 - x / 2.0F, 0, 8 - z / 2.0F, 8 + x / 2.0F, y, 8 + z / 2.0F);
@@ -51,12 +89,10 @@ public abstract class BlockUtils {
             x1 = 1 - x1;
             x2 = 1 - x2;
         }
-
         if (1 >= y1 && y1 > y2) {
             y1 = 1 - y1;
             y2 = 1 - y2;
         }
-
         if (1 >= z1 && z1 > z2) {
             z1 = 1 - z1;
             z2 = 1 - z2;
@@ -89,13 +125,7 @@ public abstract class BlockUtils {
 
     @Nullable
     public static Block fromLocation(ResourceLocation location) {
-
-        for (BlockWrapper wrapper : ModBlocks.ALL) {
-            if (Objects.equals(wrapper.getResourceLocation(), location)) {
-                return wrapper.get();
-            }
-        }
-        return null;
+        return ForgeRegistries.BLOCKS.getValue(location);
     }
 
     @Nullable
@@ -111,8 +141,8 @@ public abstract class BlockUtils {
     }
 
     public static Block getStrippedVariant(Block block) {
-        if (STRIPPED_LOGS.containsKey(getWrapper(block))) {
-            return STRIPPED_LOGS.get(getWrapper(block)).get();
+        if (STRIPPED_MODDED_LOGS.containsKey(getWrapper(block))) {
+            return STRIPPED_MODDED_LOGS.get(getWrapper(block)).get();
         } else {
             throw new RuntimeException("Block can not be stripped.");
         }
@@ -170,58 +200,41 @@ public abstract class BlockUtils {
         return level.getFluidState(position).getType() == Fluids.WATER;
     }
 
-
-    static {
-        SCULPTURES.put(ModBlocks.CUT_OAK_PLANKS, ModBlocks.OAK_SCULPTURE);
-        SCULPTURES.put(ModBlocks.CUT_SPRUCE_PLANKS, ModBlocks.SPRUCE_SCULPTURE);
-        SCULPTURES.put(ModBlocks.CUT_BIRCH_PLANKS, ModBlocks.BIRCH_SCULPTURE);
-        SCULPTURES.put(ModBlocks.CUT_JUNGLE_PLANKS, ModBlocks.JUNGLE_SCULPTURE);
-        SCULPTURES.put(ModBlocks.CUT_ACACIA_PLANKS, ModBlocks.ACACIA_SCULPTURE);
-        SCULPTURES.put(ModBlocks.CUT_DARK_OAK_PLANKS, ModBlocks.DARK_OAK_SCULPTURE);
-        SCULPTURES.put(ModBlocks.CUT_MANGROVE_PLANKS, ModBlocks.MANGROVE_SCULPTURE);
-        SCULPTURES.put(ModBlocks.CUT_CHERRY_PLANKS, ModBlocks.CHERRY_SCULPTURE);
-        SCULPTURES.put(ModBlocks.CUT_BAMBOO_PLANKS, ModBlocks.BAMBOO_SCULPTURE);
-        SCULPTURES.put(ModBlocks.CUT_CRIMSON_PLANKS, ModBlocks.CRIMSON_SCULPTURE);
-        SCULPTURES.put(ModBlocks.CUT_WARPED_PLANKS, ModBlocks.WARPED_SCULPTURE);
-        SCULPTURES.put(ModBlocks.CUT_WALNUT_PLANKS, ModBlocks.WALNUT_SCULPTURE);
-        SCULPTURES.put(ModBlocks.CUT_CHESTNUT_PLANKS, ModBlocks.CHESTNUT_SCULPTURE);
-        SCULPTURES.put(ModBlocks.CUT_LUNAR_PLANKS, ModBlocks.LUNAR_SCULPTURE);
-    }
-
     public static class SetShapes {
 
-        public static final VoxelShape BLOCK = cube(16);
-        public static final VoxelShape SLAB = shape(16, 8, 16);
+        public static final VoxelShape
+                BLOCK = cube(16),
+                SLAB = shape(16, 8, 16),
 
-        public static final VoxelShape FIREWOOD_X_1 = shape(16, 8, 8);
-        public static final VoxelShape FIREWOOD_X_3 = Shapes.or(shape(16, 8, 16), shape(16, 8, 8).move(0, 0.5F, 0.0625F));
-        public static final VoxelShape FIREWOOD_X_4 = Shapes.or(shape(16, 8, 16), shape(16, 8, 13).move(0, 0.5F, -0.09375F));
-        public static final VoxelShape FIREWOOD_Y_1 = shape(8, 16, 8);
-        public static final VoxelShape FIREWOOD_Y_2 = Shapes.or(shape(8, 16, 8).move(0.0625F, 0, 0.25F), shape(8, 16, 8).move(-0.0625F, 0, -0.25F));
-        public static final VoxelShape FIREWOOD_Y_3 = Shapes.or(shape(8, 16, 8).move(0.0625F, 0, 0.25F), shape(16, 16, 8).move(0, 0, -0.25F));
-        public static final VoxelShape FIREWOOD_Y_4 = Shapes.or(shape(13, 16, 8).move(-0.09375F, 0, 0.25F), shape(16, 16, 8).move(0, 0, -0.25F));
-        public static final VoxelShape FIREWOOD_Z_1 = shape(8, 8, 16);
-        public static final VoxelShape FIREWOOD_Z_3 = Shapes.or(shape(16, 8, 16), shape(8, 8, 16).move(0.0625F, 0.5F, 0));
-        public static final VoxelShape FIREWOOD_Z_4 = Shapes.or(shape(16, 8, 16), shape(13, 8, 16).move(-0.09375F, 0.5F, 0));
+                FIREWOOD_X_1 = shape(16, 8, 8),
+                FIREWOOD_X_3 = Shapes.or(shape(16, 8, 16), shape(16, 8, 8).move(0, 0.5F, 0.0625F)),
+                FIREWOOD_X_4 = Shapes.or(shape(16, 8, 16), shape(16, 8, 13).move(0, 0.5F, -0.09375F)),
+                FIREWOOD_Y_1 = shape(8, 16, 8),
+                FIREWOOD_Y_2 = Shapes.or(shape(8, 16, 8).move(0.0625F, 0, 0.25F), shape(8, 16, 8).move(-0.0625F, 0, -0.25F)),
+                FIREWOOD_Y_3 = Shapes.or(shape(8, 16, 8).move(0.0625F, 0, 0.25F), shape(16, 16, 8).move(0, 0, -0.25F)),
+                FIREWOOD_Y_4 = Shapes.or(shape(13, 16, 8).move(-0.09375F, 0, 0.25F), shape(16, 16, 8).move(0, 0, -0.25F)),
+                FIREWOOD_Z_1 = shape(8, 8, 16),
+                FIREWOOD_Z_3 = Shapes.or(shape(16, 8, 16), shape(8, 8, 16).move(0.0625F, 0.5F, 0)),
+                FIREWOOD_Z_4 = Shapes.or(shape(16, 8, 16), shape(13, 8, 16).move(-0.09375F, 0.5F, 0)),
 
-        public static final VoxelShape CREEPER = Shapes.or(shape(6, 3, 8), shape(6, 16, 6));
-        public static final VoxelShape ENDERMAN = shape(6, 16, 12);
-        public static final VoxelShape BLAZE = shape(8, 15, 8);
-        public static final VoxelShape VEX = shape(10, 12, 6).move(0, 0, 0.0625F);
-        public static final VoxelShape WOLF = shape(6, 10, 16);
-        public static final VoxelShape RABBIT = shape(8, 9, 8).move(0, 0, 0.0625F);
-        public static final VoxelShape VILLAGER = shape(10, 13, 8);
-        public static final VoxelShape SKULL = shape(8, 10, 10).move(0, 0, 0.0625F);
-        public static final VoxelShape ANGEL = Shapes.or(shape(16, 10, 6), shape(8, 4, 8).move(0, 0.625F, 0));
-        public static final VoxelShape HEART = shape(12, 11, 6);
-        public static final VoxelShape GEM = shape(12, 8, 12);
-        public static final VoxelShape AXE = shape(10, 16, 4);
-        public static final VoxelShape SWORD = shape(4, 16, 4);
-        public static final VoxelShape HAMMER = Shapes.or(shape(10, 5, 6), shape(2, 16, 2));
-        public static final VoxelShape BOOK = shape(16, 5, 10);
-        public static final VoxelShape NOTE = shape(10, 10, 4);
-        public static final VoxelShape DICE = cube(10);
-        public static final VoxelShape CHESS_PIECE = Shapes.or(shape(6, 2, 6), shape(3, 13, 3));
+                CREEPER = Shapes.or(shape(6, 3, 8), shape(6, 16, 6)),
+                ENDERMAN = shape(6, 16, 12),
+                BLAZE = shape(8, 15, 8),
+                VEX = shape(10, 12, 6).move(0, 0, 0.0625F),
+                WOLF = shape(6, 10, 16),
+                RABBIT = shape(8, 9, 8).move(0, 0, 0.0625F),
+                VILLAGER = shape(10, 13, 8),
+                SKULL = shape(8, 10, 10).move(0, 0, 0.0625F),
+                ANGEL = Shapes.or(shape(16, 10, 6), shape(8, 4, 8).move(0, 0.625F, 0)),
+                HEART = shape(12, 11, 6),
+                GEM = shape(12, 8, 12),
+                AXE = shape(10, 16, 4),
+                SWORD = shape(4, 16, 4),
+                HAMMER = Shapes.or(shape(10, 5, 6), shape(2, 16, 2)),
+                BOOK = shape(16, 5, 10),
+                NOTE = shape(10, 10, 4),
+                DICE = cube(10),
+                CHESS_PIECE = Shapes.or(shape(6, 2, 6), shape(3, 13, 3));
     }
 
 }
