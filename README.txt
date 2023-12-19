@@ -1,5 +1,4 @@
-HAVING TROUBLE WITH UPLOADING FILES, WILL COME BACK LATER
-
+Not much to read here.
 
 Source installation information for modders
 -------------------------------------------
